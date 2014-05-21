@@ -9,5 +9,5 @@ uzumaki is a simple Emacs buffers cycler
 Minimal setup
 -----
 
-(require 'uzumaki)
-(uzumaki-minor-mode 1)
+`(require 'uzumaki)`
+`(uzumaki-minor-mode 1)`
