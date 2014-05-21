@@ -14,6 +14,6 @@ Minimal setup
 
 
 Usage
-_____
+-----
 
-Read the instructions in the [uzumaki.el](https://github.com/geyslan/uzumaki/blob/master/uzumaki.el)
+Read the instructions in the [uzumaki.el](https://github.com/geyslan/uzumaki/blob/master/uzumaki.el).
