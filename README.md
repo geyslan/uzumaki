@@ -1,4 +1,4 @@
-![alt tag](https://raw.github.com/uzumaki/master/uzumaki.png)
+![alt tag](https://raw.githubusercontent.com/geyslan/uzumaki/master/uzumaki.png)
 
 uzumaki.el
 =====
