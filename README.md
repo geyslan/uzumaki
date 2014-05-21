@@ -9,5 +9,11 @@ uzumaki is a simple Emacs buffers cycler
 Minimal setup
 -----
 
-`(require 'uzumaki)`
+`(require 'uzumaki)`<br />
 `(uzumaki-minor-mode 1)`
+
+
+Usage
+_____
+
+Read the instructions in the [uzumaki.el](https://github.com/geyslan/uzumaki/blob/master/uzumaki.el)
