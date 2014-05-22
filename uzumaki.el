@@ -7,6 +7,7 @@
 ;; Version: 0.1
 ;; Package-version: 0.1
 ;; Keywords: buffer, convenience
+;; Package-Requires: ((cl-lib "0.5"))
 
 ;;; Commentary:
 
@@ -61,8 +62,7 @@
 ;;; Code:
 
 (require 'ido)
-(eval-when-compile
-  (require 'cl))
+(require 'cl-lib)
 
 (defgroup uzumaki nil
   "Cycle buffers easily using a predefined setup"
@@ -139,7 +139,7 @@
 		      (dolist (regex (sort uzumaki-never-show-list 'string-lessp))
 			(if (not (eq nil (string-match-p regex bufname)))
 			    (throw 'show nil)))
-		      (case mode
+		      (cl-case mode
 			('major-mode
 			 (and (eq this-buf-mode (with-current-buffer buf major-mode))
 			      bufname))
@@ -196,7 +196,7 @@
   "Function that return current buffer position in MODE buffers.  If not found, return nil."
   (interactive)
   (let* ((buffers (uzumaki-buffers mode))
-	(pos (position (buffer-name) buffers :start 0 :test #'equal)))
+	(pos (cl-position (buffer-name) buffers :start 0 :test #'equal)))
     pos))
 
 (defun uzumaki-next-buffer-position (&optional mode)
@@ -265,6 +265,7 @@
 	  nil)
       (switch-to-buffer prevbuffer nil 1))))
 
+;;;###autoload
 (define-minor-mode uzumaki-minor-mode
   "Minor-mode that allows to cycle buffers easily using a predefined setup"
   :lighter " うずまき"
