@@ -1,4 +1,4 @@
-;;; uzumaki.el --- A simple Emacs buffers cycler
+;;; uzumaki.el --- A simple buffer cycler
 
 ;; Copyright (C) 2014 Geyslan G. Bem <geyslan@gmail.com>
 
