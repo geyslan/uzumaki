@@ -24,7 +24,7 @@
 ;;   or
 ;;      (setq uzumaki-cycle-mode 'system)
 ;;   or
-;;      (uzumaki-set-default-mode 'regex)
+;;      (uzumaki-set-cycle-mode 'regex)
 ;;      (uzumaki-add-regex "^\\*CEDET.*\\*")
 ;;      (uzumaki-add-regex "^\\*Back.*\\*")
 ;;
@@ -49,7 +49,7 @@
 ;;   (define-key uzumaki-minor-mode-map (kbd "C-c <") 'uzumaki-cycle-to-prev-buffer 'all-no-hidden)
 ;;   (define-key uzumaki-minor-mode-map (kbd "C-c >") 'uzumaki-cycle-to-next-buffer 'all-no-hidden)
 ;;
-;;   ;; If there is a conflicting key, unbind the uzumaki-minor-mode respective key.
+;;   ;; If there is a conflicting key, unbind the uzumaki-minor-mode respective one.
 ;;   (define-key uzumaki-minor-mode-map (kbd "C-,") nil)
 ;;   (define-key uzumaki-minor-mode-map (kbd "C-.") nil))
 ;;
