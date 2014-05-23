@@ -250,7 +250,7 @@
     (if (or (eq nextbuffer nil)
 	    (eq nextbuffer (buffer-name)))
 	(progn
-	  (message "[うずまき]: there is no other buffer")
+	  (message "[Uzumaki]: there is no other buffer")
 	  nil)
       (switch-to-buffer nextbuffer nil 1))))
 
@@ -261,14 +261,14 @@
     (if (or (eq prevbuffer nil)
 	    (eq prevbuffer (buffer-name)))
 	(progn
-	  (message "[うずまき]: there is no other buffer")
+	  (message "[Uzumaki]: there is no other buffer")
 	  nil)
       (switch-to-buffer prevbuffer nil 1))))
 
 ;;;###autoload
 (define-minor-mode uzumaki-minor-mode
   "Minor-mode that allows to cycle buffers easily using a predefined setup"
-  :lighter " うずまき"
+  :lighter " Uzumaki"
   :keymap (let ((map (make-sparse-keymap)))
 	    (define-key map (kbd "C-c z") 'uzumaki-ido-buffers-cycle-by-mode)
 	    (define-key map (kbd "C-.")   'uzumaki-cycle-to-next-buffer)
