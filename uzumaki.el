@@ -250,7 +250,7 @@
     (if (or (eq nextbuffer nil)
 	    (eq nextbuffer (buffer-name)))
 	(progn
-	  (message "[Uzumaki]: there is no other buffer")
+	  (message "[Uzumaki]: there is no other buffer given the criteria")
 	  nil)
       (switch-to-buffer nextbuffer nil 1))))
 
@@ -261,7 +261,7 @@
     (if (or (eq prevbuffer nil)
 	    (eq prevbuffer (buffer-name)))
 	(progn
-	  (message "[Uzumaki]: there is no other buffer")
+	  (message "[Uzumaki]: there is no other buffer given the criteria")
 	  nil)
       (switch-to-buffer prevbuffer nil 1))))
 
